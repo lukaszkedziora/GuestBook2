@@ -1,0 +1,126 @@
+﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+body {
+  background: url('http://www.lukaszkedziora.com/wp-content/uploads/2020/06/foto1.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  color: #fff;
+  background-color: transparent;
+  margin-bottom: 60px;
+  text-shadow: 1px 1px black;
+}
+.table-hover{
+  color: #fff;
+  background-color:  rgb(19, 21, 22, 0.2);
+}
+.navbar, .navbar-inverse {
+  background: rgb(19, 21, 22, 0.2) !important;
+  border-color: rgb(19, 21, 22, 0.2) !important;
+}
+.table-hover td {
+  color: #fff;
+}
+.table-hover :hover {
+  /* .GuestBook .message */
+  background: rgb(19, 21, 22, 0.3) !important;
+}
+
+.form-control{
+  background:  rgb(19, 21, 22, 0.2) !important;
+  color: white !important;
+}
+.form-control :active {
+  background:  rgb(19, 21, 22, 0.5) !important;
+  color: white !important;
+}
+a.navbar-brand {
+  white-space: normal;
+  text-align: center;
+  word-break: break-all;
+  background-color: transparent;
+}
+
+/* Provide sufficient contrast against white background */
+a {
+  color:  #1b6ec2;
+}
+
+ .btn-primary {
+  color: #fff;
+  background: rgb(19, 21, 22);
+  border-color: rgb(19, 21, 22);
+  float: center;
+
+}
+.btn-primary:hover {
+  color: rgb(19, 21, 22);
+  background:  #fff;
+  border-color:  #fff;
+}
+
+.btn-primary:active {
+  color: #fff !important;
+  background: rgb(19, 21, 22) !important;
+  border-color: rgb(19, 21, 22) !important;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+  color: #fff !important;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+.navbar-light .navbar-brand  {
+  color:white !important;
+}
+.text-dark{
+  color:white !important;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  font-size: 14px;
+}
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.border-top {
+  border-top: 1px solid #e5e5e5;
+}
+.border-bottom {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow {
+  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+button.accept-policy {
+  font-size: 1rem;
+  line-height: inherit;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+
+.footer {
+  color: white !important;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  white-space: nowrap;
+  line-height: 60px; /* Vertically center the text there */
+  background: rgb(19, 21, 22, 0.2) !important;
+  border-color: rgb(19, 21, 22, 0.2) !important;
+}
