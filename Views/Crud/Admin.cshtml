@@ -1,0 +1,33 @@
+@model GuestBook3.Models.Record
+@{
+    ViewData["Title"] = "GuestBook2";
+}
+
+<h1>Welcom to Admin Panel </h1>
+
+<table class="table-hover table table-bordered" method="get">
+  <thead>
+    <tr>
+      <th scope="col">Name</th>
+      <th scope="col">Message</th>
+      <th scope="col">Email</th>
+      <th scope="col">Date</th>
+      <th scope="col">Edit</th>
+      <th scope="col">Delete</th>
+
+  </thead>
+  @* FIX: Model.Records *@
+    @foreach (var record in ViewData["list"] as List<Record>){ 
+  <tbody>
+    <tr>
+      <td>@record.Name</td>
+      <td>@record.Message</td>
+      <td>@record.Email</td>
+      <td>@record.Date</td>
+      <td><a asp-action="EditRecord" asp-route-id="@record.Id">Edit</a></td>
+      <td><a asp-action="DeleteRecord" asp-route-id="@record.Id">Delete</a> </td>
+
+
+    </tr>
+  </tbody>} 
+</table>

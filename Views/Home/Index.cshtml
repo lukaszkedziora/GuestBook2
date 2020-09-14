@@ -1,0 +1,52 @@
+﻿@model GuestBook3.Models.Record
+@{
+    ViewData["Title"] = "GuestBook2";
+}
+<body>
+<h1>Welcome to my GuestBook</h1>
+
+<form asp-action="index" method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Name" class="control-label"></label>
+                <input asp-for="Name" class="form-control" placeholder="Enter your Name"/>
+                <span asp-validation-for="Name" class="text-danger"></span>
+            </div>
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Email" class="control-label"></label>
+                <input asp-for="Email" class="form-control" placeholder="Enter your E-mail"/>
+                <span asp-validation-for="Email" class="text-danger"></span>
+            </div>
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Message" class="control-label"></label>
+                <textarea input asp-for="Message" rows="5" class="form-control" placeholder="Enter your Message"></textarea>
+                <span asp-validation-for="Message" class="text-danger"></span>
+            </div>
+        <button type="submit" class="btn-lg btn-primary">Submit</button>    
+</form>
+
+
+<table class="table-hover table" method="get">
+  <thead>
+    <tr>
+      <th scope="col">Name</th>
+      <th scope="col">Message</th>
+      <th scope="col">Email</th>
+      <th scope="col">Date</th>
+    </tr>
+  </thead>
+  @* FIX: Model.Records *@
+    @foreach (var record in ViewData["list"] as List<Record>){ 
+  <tbody>
+    <tr>
+      <td>@record.Name</td>
+      <td>@record.Message</td>
+      <td>@record.Email</td>
+      <td>@record.Date</td>
+    </tr>
+  </tbody>} 
+</table>
+</div>
+</body>
