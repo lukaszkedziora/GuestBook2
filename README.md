@@ -12,7 +12,7 @@ The project is a ASP.NET Core MVC. Guest application is is one of the must-haves
 - Dapper ORM
 
 ## Status
-Finished, before refactoring.
+Not yet finished, before refactoring.
 
 
 ## Getting Started
